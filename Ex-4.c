@@ -6,7 +6,7 @@
 int main(){
 	
 	char nome[45];
-	int i=0, tamanho=0, espaco_id=0, l=0, r=0; 
+	int i=0, tamanho=0, espaco_id=0,l=0,r=0; 
 	
 	printf("Digite seu nome: ");
 	scanf("%[^\n]s", &nome);
@@ -25,7 +25,8 @@ int main(){
 	printf(",");
 	
 	for(i = 0; i < tamanho; i++){
-		if(l==0)r=nome[i];
+		if(l==0)
+			r=nome[i];
 			l++;
 		if(nome[i]==' '){
 			l=0;
